@@ -1,0 +1,78 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.img-git {
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #0078d7;
+}
+
+.hero {
+  background-color: #0078d7;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.interlayer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.product {
+  max-width: 30%;
+  height: auto;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.info-container img {
+  height: 300px;
+  width: 244px;
+}
