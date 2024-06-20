@@ -20,19 +20,37 @@ body {
   --blue: #0078d7;
 }
 
+.header {
+  background-color: var(--lightGray);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-git {
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+}
+
 header>nav>ul>li:not(:first-child):before {
-  content: "/";
+  content: "╱";
   color: #454545;
-  margin: 0 .5rem;
+  margin: 10px;
+}
+
+header>nav>ul>li>a {
+  margin: 3px;
+}
+
+header>nav>ul>li, header>nav>ul>li>a {
+  display: inline-block;
 }
 
 .navigation ul {
   list-style: none;
   display: flex;
-}
-
-.navigation li {
-  margin-left: auto;
 }
 
 .navigation a {
@@ -46,27 +64,18 @@ header>nav>ul>li:not(:first-child):before {
   text-decoration: underline;
 }
 
-.img-git {
-  height: 42px;
-  width: 42px;
-  cursor: pointer;
-}
-
-.header {
-  background-color: var(--lightGray);
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero {
+.welcome {
   background-image: url('Images/58488-pole_cvety2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--blue);
   color: var(--white);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.site-info {
   padding: 50px 20px;
   text-align: center;
 }
@@ -110,44 +119,14 @@ header>nav>ul>li:not(:first-child):before {
   }
 }
 
-/*.image-row {
-  display: flex;
-  /*Расположение изображений с равными отступами между ними
-  justify-content: space-around;
-  /*Выравнивание изображений по центру
-  align-items: center;
-  padding: 10px;
-}*/
-
 .main-content {
   padding: 20px;
 }
 
-.interlayer {
+.gray-interlayer {
   background-color: var(--lightGray);
   text-align: center;
   padding: 10px 20px;
-}
-
-.col {
-  position: relative;
-  width: 100%;
-  padding-right: .75rem;
-  padding-left: .75rem;
-}
-.material-card {
-  position: relative;
-  width: 100%;
-  padding-right: .75rem;
-  padding-left: .75rem;
-}
-
-.hr {
-  border: 15px solid var(--darkGray);
-  color: var(--white);
-  background-color: var(--darkGray);
-  text-align: center;
-  font-size: 20px;
 }
 
 .head2 {
@@ -163,14 +142,14 @@ header>nav>ul>li:not(:first-child):before {
   align-items: center;
 }
 
-.cell-img1 {
+.cell-img-interlayer {
   height: 350px;
   width: 688px;
 }
 
 .cell-img2 {
-  height: 450px;
-  width: 450px;
+  height: 600px;
+  width: 600px;
 }
 
 .cell-container2 {
@@ -204,7 +183,6 @@ header>nav>ul>li:not(:first-child):before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-color: var(--lightGray);*/
   text-align: left;
   padding: 10px 20px;
 }
